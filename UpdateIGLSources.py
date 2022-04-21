@@ -74,7 +74,7 @@ def update_url():
                 current = obs.obs_get_source_by_name(scene_bsource)
                 current_name = obs.obs_source_get_name(current)
                 print(str(current_name))
-                if "teama" in str(current_name).lower:
+                if "teama" in str(current_name).lower():
                     variable_name = str(series+"ta_"+element).lower()
                     try:
                         if not config['DEFAULT'][variable_name] == "":
@@ -89,7 +89,7 @@ def update_url():
                     finally:
                         obs.obs_source_release(current)
 
-                elif "teamb" in str(current_name).lower:
+                elif "teamb" in str(current_name).lower():
                     variable_name = str(series+"tb_"+element).lower()
                     try:
                         if not config['DEFAULT'][variable_name] == "":
@@ -135,7 +135,7 @@ def update_url():
                 current = obs.obs_get_source_by_name(scene_tsource)
                 current_name = obs.obs_source_get_name(current)
                 print(str(current_name))
-                if "teama" in str(current_name).lower:
+                if "teama" in str(current_name).lower():
                     variable_name = str(series+"ta_"+element).lower()
                     try:
                         if not config['DEFAULT'][variable_name] == "":
@@ -150,7 +150,7 @@ def update_url():
                     finally:
                         obs.obs_source_release(current)
                 
-                elif "teamb" in str(current_name).lower:
+                elif "teamb" in str(current_name).lower():
                     variable_name = str(series+"tb_"+element).lower()
                     try:
                         if not config['DEFAULT'][variable_name] == "":
@@ -178,28 +178,6 @@ def update_url():
                         print("fail")
                     finally:
                         obs.obs_source_release(current)
-
-                
-                    
-    
-    # for code in update_scenes:
-    #     scene_sources = []
-    #     if sources is not None:
-    #         for source in sources:
-    #             source_id = obs.obs_source_get_unversioned_id(source)
-    #             if source_id == "text_gdiplus":
-    #                 name = obs.obs_source_get_name(source)
-                    
-    #                 if  str(code).lower() in str(name).lower():
-    #                     print("Source name: " + name)
-    #                     print("match")
-    #                     scene_sources.append(name)
-
-    #             obs.obs_source_release(source)  
-
-        
-
-                
 
     print("done")
 
