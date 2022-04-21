@@ -3,6 +3,8 @@ Python script used to update browser and text sources on OBS
 
 ## Description
 
+* *Youtube video with visual instructions will be uploaded soon*
+
 Have you used the IGL Caster urls for your stream but get tired of having to go to all those browser sources and update the URL all the time?  Me too and I only did it for a week.  That's why I developed this Python script that will update all of those text and browser sources for you.  
 
 This will take some modification to your current setup to conform to the script but I promise it will be worth your while.
